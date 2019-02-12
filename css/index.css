@@ -1,0 +1,229 @@
+  /* header */
+
+  .header .top {
+    background-color: #f1f1f1;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+}
+
+
+.header .top .left {
+    display: flex;
+    flex-direction: row
+}
+
+.header .top .left div {
+    padding: 0 .6rem 0 .6rem;
+}
+
+
+.header .top .right {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.header .top .right div {
+    padding: 0 .6rem 0 .6rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header .top {
+        display: none
+    }
+
+    .header .top .right {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+}
+
+.header .bottom {
+    padding: 2rem 0 2rem 0;
+}
+
+.header .bottom .wrap-flex {
+    display: flex;
+    align-items: center
+}
+
+
+.header .bottom .slogan i {
+    display: inline-block;
+    font: bold 16px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+    font-style: normal;
+}
+
+.header .bottom .slogan p {
+    color: #262626;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+}
+
+.header .bottom .phone img {
+    vertical-align: middle;
+}
+
+.header .bottom .logo img {
+    vertical-align: top;
+}
+
+.header .bottom .phone .txt {
+    display: inline;
+    vertical-align: middle;
+    font-size: 22px;
+    margin-left: 0.5rem;
+}
+
+.header .bottom .phone .txt span {
+    color: #959595;
+
+}
+
+.header .bottom .phone .txt span i {
+    font-style: normal;
+    color: var(--t-color);
+}
+
+
+/* menu */
+
+.menu {
+    background-color: #666
+}
+
+.menu .navbar {
+    background-color: #666;
+
+}
+
+.menu .navbar a {
+    color: white
+}
+
+.menu a.navbar-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--t-color);
+}
+
+.menu .navbar-item:not(:first-child) {
+    padding: .5rem 3rem;
+    font-size: 1.2rem;
+}
+
+.menu .navbar-item:first-child {
+    font-size: 1.2rem;
+
+}
+
+.menu .navbar-menu.is-active {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+/* banner */
+
+.banner .hero {
+    background: url(../image/bg-new.png) center / cover;
+}
+
+
+@media (max-width: 1024px) {
+    .banner .hero {
+        background: url(image/bg-new.png) center / cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .hero {
+        background: url(image/bg-new.png) center / cover;
+    }
+}
+
+
+/* part */
+
+.part .p-title {
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+
+.part .p-title .title {
+    font-weight: 500
+}
+
+.part .product {
+    /* height: 10rem; */
+    border-radius: 0.5rem;
+}
+
+.part .columns .column {
+    margin: .5rem .5rem;
+}
+
+.part .product.bg1 {
+    background: linear-gradient(45deg, rgb(16, 130, 212), rgb(104, 174, 224));
+    /* 标准的语法 */
+}
+
+.part .product.bg2 {
+    background: linear-gradient(45deg, rgb(6, 179, 115), rgb(104, 224, 196));
+    /* 标准的语法 */
+}
+
+.part .product.bg3 {
+    background: linear-gradient(45deg, rgb(191, 186, 13), rgb(229, 230, 133));
+    /* 标准的语法 */
+}
+
+.part .product.bg4 {
+    background: linear-gradient(45deg, rgb(204, 115, 5), rgb(230, 158, 69));
+    /* 标准的语法 */
+}
+
+.part .product.bg5 {
+    background: linear-gradient(45deg, rgb(212, 52, 16), rgb(224, 121, 104));
+    /* 标准的语法 */
+}
+
+.part .product.bg6 {
+    background: linear-gradient(45deg, rgb(179, 30, 228), rgb(190, 107, 224));
+    /* 标准的语法 */
+}
+
+.part i.iconfont {
+    font-size: 3rem;
+}
+
+.part .product {
+    text-align: center
+}
+
+/* contact */
+
+.contact{
+    position: relative;
+    height: 400px;
+    background: url(../image/ditu.png) center/cover;
+}
+
+.contact .bg{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+/* footer */
+
+.footer{
+    background-color: #424141
+}
+
+

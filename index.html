@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>银舟科技</title>
 
     <link href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
     <style>
         html,
         body {
@@ -18,9 +18,17 @@
             height: 100%;
         }
 
+        :root {
+            --t-color: #f13530;
+        }
+
         * {
             padding: 0;
             margin: 0
+        }
+
+        a {
+            color: inherit
         }
 
         .page {
@@ -56,24 +64,54 @@
                 text-align: center;
                 /* margin-bottom: 20px */
                 display: block;
-                border: 1px solid blue;
+                /* border: 1px solid blue; */
+            }
+
+
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            /* project id 1042141 */
+            src:
+                url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.ttf') format('truetype'),
+                url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        /* cover bluma */
+
+        .columns {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @media screen and (min-width: 1088px) {
+            .navbar {
+                min-height: 4.25rem;
             }
         }
     </style>
 
     <style>
-        /* header */
 
-        .header .top {
-            height: 35px;
-            line-height: 35px;
-            background-color: #f1f1f1;
-        }
     </style>
+
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
+
     <div class="page">
 
 
@@ -82,19 +120,188 @@
             <div class="header">
                 <div class="top">
                     <div class="container">
-                        This container is <strong>centered</strong> on desktop.
+                        <div class="columns ">
+                            <div class="left column">
+                                <div id='setHome'>欢迎您来到银舟科技有限公司</div>
+                            </div>
+                            <div class="right column">
+
+                                <div id='setCollect' rel="sidebar">收藏网站</div>
+                                <div>-</div>
+                                <div><a href="">立即购买</a> </div>
+                                <div>-</div>
+                                <div><a href="">申请试用</a> </div>
+                                <div>-</div>
+                                <div><a href="">官方微信</a> </div>
+                            </div>
+
+                        </div>
+
                     </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="logo">
+                                    <img src="image/logo.jpg" alt="银舟科技">
+                                </div>
+                            </div>
+                            <div class="wrap-flex column is-half">
+                                <div class="slogan">
+                                    <i>银舟收银系统</i>
+                                    <p>专注收银系统十年，助力您的生意火起来</p>
+                                </div>
+                            </div>
+                            <div class="wrap-flex column is-4  ">
+                                <div class="phone">
+                                    <img src="image/phone.gif" alt="">
+                                    <div class="txt">
+                                        <span><i>联系</i>热线：</span>88888888
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="menu">
+                <div class="container">
+                    <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                            <!-- <a class="navbar-item" href="">
+                                <img src="image/logo2.jpg"
+                                    alt="银舟" width="112"
+                                    >
+                            </a> -->
+                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                                data-target="navbarBasicExample">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+
+                        <div id="navbarBasicExample" class="navbar-menu">
+                            <div class="navbar-start">
+                                <a class="navbar-item">
+                                    首页
+                                </a>
+
+                                <a class="navbar-item">
+                                    产品中心
+                                </a>
+
+                                <a class="navbar-item">
+                                    代理合作
+                                </a>
+
+                                <a class="navbar-item">
+                                    资讯动态
+                                </a>
+
+                                <a class="navbar-item">
+                                    关于银舟
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- <div class="banner">
+                <div class="hero is-fullheight">
+
+                </div>
+            </div> -->
+
+            <div class="block">
+
+                <div class="part">
+                    <div class="p-title">
+                        <p class="title is-2 ">产品中心</p>
+                        <p class="subtitle is-5">Product Center</p>
+                    </div>
+
+                    <div class="container">
+                        <div class="columns  is-mobile is-multiline">
+                            <div class="product column  bg1">
+                                <i class="iconfont">&#xe601;</i>
+                                <p class="title is-6 ">化妆品收银系统</p>
+                                <p class="subtitle is-6 ">支持前店后院批发零售</p>
+                            </div>
+                            <div class="product column bg2">
+                                <i class="iconfont">&#xe60a;</i>
+                                <p class="title is-6 ">家居店进销存系统</p>
+                                <p class="subtitle is-6 ">专业连锁管理，强大促销功能</p>
+                            </div>
+                            <div class="product column bg3">
+                                <i class="iconfont">&#xe662;</i>
+                                <p class="title is-6 ">母婴店管理系统</p>
+                                <p class="subtitle is-6 ">支持前店后院批发零售</p>
+                            </div>
+                            <div class="product column bg4">
+                                <i class="iconfont">&#xe60d;</i>
+                                <p class="title is-6 ">健身瑜伽游泳软件</p>
+                                <p class="subtitle is-6 ">支持前店后院批发零售</p>
+                            </div>
+                            <div class="product column bg5">
+                                <i class="iconfont">&#xe624;</i>
+                                <p class="title is-6 ">服装店收银系统</p>
+                                <p class="subtitle is-6 ">支持前店后院批发零售</p>
+                            </div>
+                            <div class="product column bg6">
+                                <i class="iconfont">&#xe601;</i>
+                                <p class="title is-6 ">化妆品收银系统</p>
+                                <p class="subtitle is-6 ">支持前店后院批发零售</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="part">
+                    <div class="p-title">
+                        <p class="title is-2 ">资讯动态</p>
+                        <p class="subtitle is-5">News Center</p>
+                    </div>
+
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column">
+                                <figure class="image is-3by2">
+                                    <img src="https://bulma.io/images/placeholders/480x320.png">
+                                </figure>
+                            </div>
+                            <div class="column">12</div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="menu"></div>
+            <div class="contact">
+                <div class="bg">
+                </div>
 
-            <div class="banner"></div>
+                <div>
 
-            <div class="block"></div>
+                </div>
 
-            <div class="footer"></div>
+            </div>
+
+            <!-- <div class="footer">
+
+            </div> -->
         </div>
 
         <div class="page-mobile-nav">
@@ -105,3 +312,14 @@
 </body>
 
 </html>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<script src="js/index.js"></script>
+
+<script>
+
+
+</script>
