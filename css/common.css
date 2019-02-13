@@ -1,0 +1,236 @@
+
+html,
+body {
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+:root {
+    --t-color: #f13530;
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+a {
+    color: inherit
+}
+
+.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page-content {
+    flex: 1;
+    overflow: auto;
+
+}
+
+
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1042141 */
+    src:
+        url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.ttf') format('truetype'),
+        url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+/* cover bluma */
+
+.columns {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 1088px) {
+    .navbar {
+        min-height: 4.25rem;
+    }
+}
+
+
+
+
+ /* header */
+
+ .header .top {
+    background-color: #f1f1f1;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+}
+
+
+.header .top .left {
+    display: flex;
+    flex-direction: row
+}
+
+.header .top .left div {
+    padding: 0 .6rem 0 .6rem;
+}
+
+
+.header .top .right {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.header .top .right div {
+    padding: 0 .6rem 0 .6rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header .top {
+        display: none
+    }
+
+    .header .top .right {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+}
+
+.header .bottom {
+    padding: 2rem 0 2rem 0;
+}
+
+.header .bottom .wrap-flex {
+    display: flex;
+    align-items: center
+}
+
+
+.header .bottom .slogan i {
+    display: inline-block;
+    font: bold 16px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+    font-style: normal;
+}
+
+.header .bottom .slogan p {
+    color: #262626;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+}
+
+.header .bottom .phone img {
+    vertical-align: middle;
+}
+
+.header .bottom .logo img {
+    vertical-align: top;
+}
+
+.header .bottom .phone .txt {
+    display: inline;
+    vertical-align: middle;
+    font-size: 22px;
+    margin-left: 0.5rem;
+}
+
+.header .bottom .phone .txt span {
+    color: #959595;
+
+}
+
+.header .bottom .phone .txt span i {
+    font-style: normal;
+    color: var(--t-color);
+}
+
+
+/* menu */
+
+.menu {
+    background-color: #666
+}
+
+.menu .navbar {
+    background-color: #666;
+
+}
+
+.menu .navbar a {
+    color: white
+}
+
+.menu a.navbar-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--t-color);
+}
+
+.menu .navbar-item:not(:first-child) {
+    padding: .5rem 3rem;
+    font-size: 1.2rem;
+}
+
+.menu .navbar-item:first-child {
+    font-size: 1.2rem;
+
+}
+
+.menu .navbar-menu.is-active {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+
+
+/* footer */
+
+.footer{
+    background-color: #2d2c2c;
+   
+}
+
+/* page-mobile-nav */
+
+
+    .page-mobile-nav .columns:last-child {
+        /* margin-bottom: 0 */
+    }
+
+    .page-mobile-nav {
+        display: none;
+    }
+
+
+
+    @media screen and (max-width: 800px) {
+
+        .page-mobile-nav  {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+    }

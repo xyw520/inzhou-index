@@ -9,98 +9,7 @@
 
     <link href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
-    <style>
-        html,
-        body {
-            overflow: scroll;
-            overflow-y: hidden;
-            overflow-x: hidden;
-            height: 100%;
-        }
-
-        :root {
-            --t-color: #f13530;
-        }
-
-        * {
-            padding: 0;
-            margin: 0
-        }
-
-        a {
-            color: inherit
-        }
-
-        .page {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .page-content {
-            flex: 1;
-            overflow: auto;
-
-        }
-
-        /* ------------------page-mobile-nav------------------- */
-
-
-        .page-mobile-nav {
-            display: none;
-        }
-
-        .page-mobile-nav .columns:last-child {
-            margin-bottom: 0
-        }
-
-
-        @media screen and (max-width: 800px) {
-            .page-mobile-nav {
-                z-index: 999;
-                border-top: 1px solid var(--tc);
-                box-shadow: 0 -1px 6px var(--tc);
-                text-align: center;
-                /* margin-bottom: 20px */
-                display: block;
-                /* border: 1px solid blue; */
-            }
-
-
-        }
-
-        @font-face {
-            font-family: 'iconfont';
-            /* project id 1042141 */
-            src:
-                url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.ttf') format('truetype'),
-                url('https://at.alicdn.com/t/font_1042141_2vak0l4rkey.svg#iconfont') format('svg');
-        }
-
-        .iconfont {
-            font-family: "iconfont" !important;
-            font-size: 16px;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke-width: 0.2px;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-
-        /* cover bluma */
-
-        .columns {
-            margin-right: 0;
-            margin-left: 0;
-        }
-
-        @media screen and (min-width: 1088px) {
-            .navbar {
-                min-height: 4.25rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/common.css">
 
     <style>
 
@@ -216,11 +125,11 @@
                 </div>
             </div>
 
-            <!-- <div class="banner">
+            <div class="banner">
                 <div class="hero is-fullheight">
 
                 </div>
-            </div> -->
+            </div>
 
             <div class="block">
 
@@ -268,7 +177,7 @@
 
                 </div>
 
-                <div class="part">
+                <div class="news part">
                     <div class="p-title">
                         <p class="title is-2 ">资讯动态</p>
                         <p class="subtitle is-5">News Center</p>
@@ -281,7 +190,87 @@
                                     <img src="https://bulma.io/images/placeholders/480x320.png">
                                 </figure>
                             </div>
-                            <div class="column">12</div>
+                            <div class="column newslist">
+
+                                <div>
+                                    <div class="title is-5">这是新闻标题</div>
+                                    <p>
+                                        这是新闻内容这内容这是新闻内容这是新新闻内容这是新新闻内容这是新闻内容这内容这是新闻内容这是新新闻内容这是新闻内容这内容这是新闻内容这是新新闻内容
+                                        <span>2019.02.19</span>
+                                    </p>
+                                </div>
+                                <p>
+                                    这是新闻内容这内容这是新闻内容这是新新闻内容
+                                    <span>2019.02.19</span>
+                                </p>
+
+                                <p>这是新闻内容这是新闻内容这是新闻内容这是
+                                    <span>2019.02.19</span>
+                                </p>
+                                <p>这是新闻内容这是新闻内容这是新闻内容这是新闻内容这 <span>2019.02.19</span></p>
+                                <p>这是新闻内容这是新闻内容这是新闻内容这是新闻内容 <span>2019.02.19</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hot part">
+                    <div class="p-title">
+                        <p class="title is-2 ">热门推荐</p>
+                        <p class="subtitle is-5">Hot Recommend</p>
+                    </div>
+
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div>
+                                            <figure class="image is-128x128">
+                                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                            </figure>
+                                            <div>这是标题</div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div>
+                                            <figure class="image is-128x128">
+                                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                            </figure>
+                                            <div>这是标题</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div>
+                                            <figure class="image is-128x128">
+                                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                            </figure>
+                                            <div>这是标题</div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div>
+                                            <figure class="image is-128x128">
+                                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                            </figure>
+                                            <div>这是标题</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <figure class="image  is-3by2">
+                                        <img src="https://bulma.io/images/placeholders/480x320.png">
+                                    </figure>
+                                    <div>这是标题</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -290,22 +279,88 @@
             </div>
 
             <div class="contact">
-                <div class="bg">
+                <div class="bg"></div>
+
+                <div class="container">
+                    <div class="columns">
+                        <div class="column left">
+                            <p class="title">联系我们 </p>
+                            <p class="subtitle">Contact us </p>
+                            <div class="hr"></div>
+
+                            <div class="address">
+                                <p> 公司地址：深圳市福田区国际科技大厦1804</p>
+                                <p class=""> 联系电话：8888888</p>
+                                <p class="email"> 联系邮箱：888888888888@163.com</p>
+                            </div>
+
+                            <div class="hr"></div>
+
+                            <p class="block">您可以随时与我们电话或者邮箱联系，期待与您的合作</p>
+
+                            <div class="block">
+                                <a class="button is-success">试用产品</a>
+                                <a class="button is-info">联系我们</a>
+                            </div>
+
+                        </div>
+                        <div class="column right">
+                            <div class="wx">
+                                <figure class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </figure>
+                                <div class="wxtxt">官方微信</div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-
-                </div>
 
             </div>
 
-            <!-- <div class="footer">
+            <div class="link">
+                <div class="container">
+                    <p class="title is-5">友情链接：</p>
+                    <div class="columns is-multiline is-mobile">
+                        <div class="column">友情链接</div>
+                        <div class="column">友情链接</div>
+                        <div class="column">友情链接</div>
+                        <div class="column">友情链接</div>
+                        <div class="column">友情链接</div>
+                    </div>
+                </div>
+            </div>
 
-            </div> -->
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        版权所有 Copyright © 深圳市银舟科技有限公司
+                    </p>
+                </div>
+            </footer>
         </div>
 
         <div class="page-mobile-nav">
-            底部导航
+
+
+            <div class="li">
+                首页
+            </div>
+            <div class="li">
+                产品
+            </div>
+            <div class="li">
+                合作
+            </div>
+            <div class="li">
+                咨询
+            </div>
+            <div class="li">
+                联系
+            </div>
+
+
         </div>
 
     </div>
@@ -318,6 +373,7 @@
 
 
 <script src="js/index.js"></script>
+<script src="js/nav.js"></script>
 
 <script>
 
